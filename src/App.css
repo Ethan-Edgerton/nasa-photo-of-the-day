@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  border: 5px solid black;
+  height:100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border: 3px solid black;
+  width:80vw;
+  height:80vh
+
+}
+
+.header {
+  border: 3px solid black;
+  width:100vw;
+  height:200px;
+}
+
+.sub-container{
+  border: 3px solid blue;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.apod {
+  width:100%;
+}
