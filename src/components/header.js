@@ -15,7 +15,10 @@ function Header() {
 
   return (
       Header,
-  <h1>{nasaData.title}</h1>
+      <div>
+          <h1>{nasaData.title}</h1>
+          <h2>{nasaData.date}</h2>
+      </div>
   );
 }
 

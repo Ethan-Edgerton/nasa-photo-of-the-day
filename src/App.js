@@ -19,10 +19,8 @@ function App() {
         <div className="sub-container">
           <div className="header"> 
           <Header />
-          
           </div>
           <div className="content">
-            <h2>{nasaData.date}</h2>
             <img className="apod" src={nasaData.url}></img>
             <p>{nasaData.explanation}</p>
           </div>
