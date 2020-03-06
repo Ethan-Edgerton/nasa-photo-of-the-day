@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Header from "./components/Header";
 import "./App.css";
 
 function App() {
@@ -17,10 +18,10 @@ function App() {
       <div className="container">
         <div className="sub-container">
           <div className="header"> 
+          <Header />
           
           </div>
           <div className="content">
-             <h1>{nasaData.title}</h1>
             <h2>{nasaData.date}</h2>
             <img className="apod" src={nasaData.url}></img>
             <p>{nasaData.explanation}</p>
