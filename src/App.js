@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./components/Header";
+import Content from "./components/Content";
+import styled from 'styled-components';
 import "./App.css";
+
 
 function App() {
   const [nasaData, setNasaData] = useState([]);
@@ -17,13 +20,8 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="sub-container">
-          <div className="header"> 
-          <Header />
-          </div>
-          <div className="content">
-            <img className="apod" src={nasaData.url}></img>
-            <p>{nasaData.explanation}</p>
-          </div>
+          <div><Header/></div>
+          <div><Content/></div>
       </div>
     </div>
     {console.log(nasaData)}
